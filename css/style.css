@@ -110,8 +110,156 @@ header{
     margin-left: 100px;
 }
 
-.slider{
+.sliders{
     width: 100%;
     height: 1000px;
     background-color: #2a2929;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider_1{
+    width: 410px;
+    height: 800px;
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider_1-header{
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sl-1-header_block1{
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+}
+
+.line{
+    margin-left: 10px;
+}
+
+.xbox{
+    margin-left: 10px;
+}
+
+.sl-1-header_block2 {
+    width: 100px;
+    height: 40px;
+    margin-right: 20px;
+}
+
+.burger{
+    margin-left: 25px;
+}
+
+.bottom_block{
+    width: 100%;
+    height: 290px;
+    background-color: #000000;
+}
+
+.bb_text{
+    font-family: "SegoeUI";
+    color: white;
+    margin-left: 25px;
+}
+
+.bb_text h5{
+    color: #707070;
+}
+
+.bb_text p{
+    width: 340px;
+}
+
+.price{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price_button{
+    width: 120px;
+    height: 50px;
+    background-color: #E6E6E6;
+    text-decoration: none;
+    margin-right: 25px;
+}
+
+.button_text{
+    font-family: "SegoeUI";
+    font-size: 18px;
+    color: black;
+}
+
+.button_text p{
+    margin-left: 25px;
+}
+
+.sl1_margin {
+    margin-left: 600px;
+}
+
+.slider_front{
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    height: 900px;
+    background-color: #E6E6E6;
+    position: absolute;
+    -webkit-box-shadow: -1px 0px 21px 0px rgba(50, 50, 50, 1);
+    -moz-box-shadow: -1px 0px 21px 0px rgba(50, 50, 50, 1);
+    box-shadow: -1px 0px 21px 0px rgba(50, 50, 50, 1);
+}
+
+.sf_header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 30px;
+    width: 100%;
+    height: 80px;
+}
+
+.sf_header-block{
+    width: 80%;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sf_text{
+    margin-left: 20px;
+    margin-top: 40px;
+}
+
+.sf_text h1{
+    font-family: "SegoeUI";
+    font-size: 40px;
+    font-weight: 100;
+    margin: 0 0 0 0;
+    padding: 0 0 0 0;
+}
+
+.sf_text p{
+    font-family: "SegoeUI-Bold";
+    font-size: 40px;
 }
