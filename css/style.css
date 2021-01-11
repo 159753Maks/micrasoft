@@ -110,7 +110,7 @@ header{
     margin-left: 100px;
 }
 
-.sliders{
+.comercial {
     width: 100%;
     height: 1000px;
     background-color: #2a2929;
@@ -120,7 +120,7 @@ header{
     align-items: center;
 }
 
-.slider_1{
+.comercial_1 {
     width: 410px;
     height: 800px;
     background-color: #E6E6E6;
@@ -130,7 +130,7 @@ header{
     align-items: center;
 }
 
-.slider_1-header{
+.comercial_1-header {
     width: 100%;
     height: 40px;
     margin-top: 40px;
@@ -140,7 +140,7 @@ header{
     align-items: center;
 }
 
-.sl-1-header_block1{
+.cl-1-header_block1{
     width: 100px;
     height: 40px;
     margin-left: 20px;
@@ -154,7 +154,7 @@ header{
     margin-left: 10px;
 }
 
-.sl-1-header_block2 {
+.cl-1-header_block2 {
     width: 100px;
     height: 40px;
     margin-right: 20px;
@@ -211,11 +211,11 @@ header{
     margin-left: 25px;
 }
 
-.sl1_margin {
+.cl1_margin {
     margin-left: 600px;
 }
 
-.slider_front{
+.comercial_front {
     display: flex;
     flex-direction: column;
     align-items: center;    
@@ -228,7 +228,7 @@ header{
     box-shadow: -1px 0px 21px 0px rgba(50, 50, 50, 1);
 }
 
-.sf_header{
+.cl_header{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -238,7 +238,7 @@ header{
     height: 80px;
 }
 
-.sf_header-block{
+.cl_header-block{
     width: 80%;
     height: 80px;
     display: flex;
@@ -247,12 +247,12 @@ header{
     align-items: center;
 }
 
-.sf_text{
+.cl_text{
     margin-right: 350px;
     margin-top: 40px;
 }
 
-.sf_text h1{
+.cl_text h1{
     font-family: "SegoeUI";
     font-size: 40px;
     font-weight: 100;
@@ -260,12 +260,12 @@ header{
     padding: 0 0 0 0;
 }
 
-.sf_text p{
+.cl_text p{
     font-family: "SegoeUI-Bold";
     font-size: 40px;
 }
 
-.sf_photo{
+.cl_photo{
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -300,12 +300,12 @@ header{
     height: 180px;
 }
 
-.sf_links{
+.cl_links{
     width: 80%;
     height: 200px;
 }
 
-.sf_link{
+.cl_link{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -314,10 +314,232 @@ header{
     height: 100px;
 }
 
-.sf_link a{
+.cl_link a{
     text-decoration: none;
     color: black;
     font-family: "SegoeUI";
     font-size: 20px;
 }
 
+.slider {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 1000px;
+    background-color: #2a2929;
+}
+
+.slider__wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+    margin-top: 125px;
+}
+
+.slider__item {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.slider__control {
+    position: absolute;
+    top: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    color: #fff;
+    text-align: center;
+    opacity: 0.5;
+    height: 50px;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, .5);
+}
+
+.slider__control:hover,
+.slider__control:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: 0;
+    opacity: .9;
+}
+
+.slider__control_left {
+    left: 0;
+}
+
+.slider__control_right {
+    right: 0;
+}
+
+.slider__control::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: transparent no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.slider__control_left::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control_right::before {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+.slider__item>div {
+    line-height: 250px;
+    font-size: 100px;
+    text-align: center;
+}
+
+.slider_1{
+    width: 500px;
+    height: 800px;
+    background-color: #E6E6E6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.slider_2{
+width: 500px;
+height: 800px;
+background-color: #E6E6E6;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-left: 150px;
+}
+
+.sl-2_header {
+ width: 100%;
+ height: 40px;
+ display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+}
+
+.sl-2_header-block {
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.sl-2_text {
+    margin-top: 40px;
+}
+
+.sl-2_text h1 {
+    font-family: "SegoeUI";
+    font-size: 30px;
+    font-weight: 100;
+    margin: 0;
+    padding: 0;
+}
+
+.sl-2_text p {
+    font-family: "SegoeUI-Bold";
+    font-size: 30px;
+}
+
+.sl-2_photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    width: 80%;
+    height: 450px;
+}
+
+.sl-2-photo1 {
+    background-color: rgb(80, 77, 77);
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.sl-2-photo2 {
+    background-color: rgb(80, 77, 77);
+    width: 100px;
+    height: 100px;
+    margin-top: 10px;
+}
+
+.sl-2-photo3 {
+    background-color: rgb(80, 77, 77);
+    width: 100px;
+    height: 100px;
+}
+
+.sl-2-photo4 {
+    background-color: rgb(80, 77, 77);
+    width: 100px;
+    height: 100px;
+}
+
+.slider_5 {
+    width: 500px;
+    height: 800px;
+    background-color: #E6E6E6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 150px;
+}
+
+.slider_5-header {
+    width: 100%;
+    height: 40px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sl-5-header_block1 {
+    margin-left: 20px;
+}
+
+.line {
+    margin-left: 10px;
+}
+
+.xbox {
+    margin-left: 10px;
+}
+
+.sl-5-header_block2 {
+    margin-right: 20px;
+}
+
+.burger {
+    margin-left: 25px;
+}
+
+.sl-5_bottom_block {
+    width: 100%;
+    height: 290px;
+    background-color: #000000;
+}
+
+.sl-5_bottom_block h1{
+    font-size: 45px;
+    margin: 0;
+}
+
+.sl-5_bb_text {
+    font-family: "SegoeUI";
+    color: white;
+    margin-left: 25px;
+}
+
+.sl-5_series_s{
+    margin-top: 50px;
+}
